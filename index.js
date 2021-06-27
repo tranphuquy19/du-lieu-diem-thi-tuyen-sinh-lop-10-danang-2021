@@ -24,6 +24,7 @@ async function getUser(i) {
 }
 
 async function start() {
+    // Min= 010001, Max=110001
     for (let i = 120001; i < 999999; i++) {
         try {
             const { data } = await getUser(`${i}`.padStart(6, '0'));
